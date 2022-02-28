@@ -7,4 +7,15 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+    let result;
+    
+    do {
+        let age = prompt('Quel est votre age?');
+        let gender = prompt('Votre gender?','F/H');
+        let city = prompt('Quel votre ville?');
+        result = confirm(`Votre age ${age}, votre gender ${gender}, votre ville ${city}\n Vouz confirmez?`);
+    }
+    while (result !== true);
+    
+    
 })();

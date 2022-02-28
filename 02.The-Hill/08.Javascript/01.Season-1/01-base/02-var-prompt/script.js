@@ -7,5 +7,9 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+    let user = prompt('Quel est votre prenom?');
+    // prompt('Hello, ',`${user}!` );
+    
+    alert(`Hello, ${user}`);
 })();
 
