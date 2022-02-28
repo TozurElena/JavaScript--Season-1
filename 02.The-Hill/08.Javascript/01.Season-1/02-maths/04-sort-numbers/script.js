@@ -3,11 +3,14 @@
 (() => {
 
     // to get the value of an input: document.getElementById("element-id").value
-
+    let numbers = document.getElementById('numbers');
+    
     document.getElementById("run").addEventListener("click", () => {
+        let numbersArr = numbers.value.split(', ');
 
-        // your code here
-
+		numbers.value = numbersArr.sort((a, b) => a - b);
+                    
     });
+     
 
 })();

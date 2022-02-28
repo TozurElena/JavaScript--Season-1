@@ -4,10 +4,15 @@
 (() => {
     
     // to get the value of an input: document.getElementById("element-id").value
+    let number = document.getElementById('number');
 
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let fact = 1;
+        for (let i = 1; i <= +number.value; i++) {
+            fact *= i;
+        }
+        number.value = fact;
 
     });
 
