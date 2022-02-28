@@ -4,6 +4,12 @@
 
 (() => {
 
-    // your code here
+    let btn = document.getElementById('run');
+
+    btn.addEventListener('click', () => {
+        let colorRandom = Math.floor(Math.random()*799998)+1;
+        document.body.style.background = '#' + colorRandom;
+    })
+
 
 })();
