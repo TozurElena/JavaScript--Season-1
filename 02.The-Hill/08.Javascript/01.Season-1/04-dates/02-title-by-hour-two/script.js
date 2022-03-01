@@ -6,6 +6,15 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    const date = new Date();
+
+	let hour = date.getHours().toString();
+    let minut = date.getMinutes().toString();
+            
+	if (hour + minut <= 1730)  {
+        document.getElementById('target').innerHTML = 'Hello';
+	    } else {
+		    document.getElementById('target').innerHTML = 'Good evening';
+	}
 
 })();

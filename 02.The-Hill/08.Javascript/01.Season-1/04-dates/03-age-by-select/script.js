@@ -3,7 +3,24 @@
 
 
 (() => {
+    const date = new Date();
+    let btn = document.getElementById('run');
+    let day = document.getElementById('dob-day');
+    let month = document.getElementById('dob-month');
+    let year = document.getElementById('dob-year');
 
-    // your code here
+    let dayP = date.getDate();
+    let monthP = date.getMonth() + 1;
+    let yearP = date.getFullYear();
+  
+    
+    btn.addEventListener('click', () => {
+        let age = yearP - year.value - 1;
+        if (monthP > month.value) age++;
+            else if (monthP == month.value && dayP >= day.value) age++;
+        alert(`votre age ${age}`);
+
+    })
+
 
 })();
