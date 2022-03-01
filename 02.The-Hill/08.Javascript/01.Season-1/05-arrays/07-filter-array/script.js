@@ -80,6 +80,16 @@
         },
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+    let arr = [];
+    
+    btn.addEventListener('click', () => {
+        people.forEach((elem, index) => {
+            if (elem.age >18) {
+                arr.push(elem);
+            }
+        })
+       console.log(arr);    
+     })
 
 })();

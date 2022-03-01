@@ -15,6 +15,15 @@
         "cerise",
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+    
+    btn.addEventListener('click', () => {
+        fruits.shift();
+        fruits.pop();
+        fruits.splice(0, 0, "banana");
+        fruits.push("kiwi");
+        console.log(fruits);
+    })
 
+    
 })();

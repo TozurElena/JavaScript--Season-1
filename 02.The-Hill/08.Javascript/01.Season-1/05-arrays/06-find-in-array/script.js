@@ -80,6 +80,18 @@
         },
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+    
+    btn.addEventListener('click', () => {
+        people.forEach((elem, index) => {
+            if (elem.lastname == "Dupont" && elem.firstname == "Jean") {
+            console.log(elem.email);
+            console.log(index);
+            
+            }
+            
+        })
+            
+     })
 
 })();

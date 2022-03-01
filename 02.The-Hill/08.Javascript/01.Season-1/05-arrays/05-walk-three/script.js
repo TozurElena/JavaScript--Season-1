@@ -31,6 +31,11 @@
         },
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+    
+    btn.addEventListener('click', () => {
+        people.forEach(elem => console.log(elem.firstname));
+        }
+    )
 
 })();

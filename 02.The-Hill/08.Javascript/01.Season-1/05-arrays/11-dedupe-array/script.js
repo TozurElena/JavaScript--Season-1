@@ -20,6 +20,17 @@
         "cerise",
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+                    
+    btn.addEventListener('click', () => {
+
+        for(let i = 0; i < fruits.length - 1; i++) {
+            for(let j = i + 1; j < fruits.length; j++) {
+                if (fruits[i] == fruits[j]) fruits.splice(j,1);
+            }
+        }
+        console.log(fruits);
+        
+    })
 
 })();

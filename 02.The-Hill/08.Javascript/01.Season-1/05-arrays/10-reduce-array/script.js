@@ -81,6 +81,16 @@
         },
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+                    
+    btn.addEventListener('click', () => {
+        // const sum = (total, num) => total + num.age;
+        
+        const initialValue = 0;
+        let s = people.reduce((total, num) => total + num.age , initialValue);
+
+        console.log(s);
+        
+    })
 
 })();

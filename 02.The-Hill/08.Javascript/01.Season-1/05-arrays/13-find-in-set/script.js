@@ -14,5 +14,14 @@
         "Lucas",
     ]);
 
-    // your code here
+    let btn = document.getElementById('run');
+                    
+    btn.addEventListener('click', () => {
+
+        console.log(people.size);
+        if (people.has('Alexandre')) console.log('Alexandre is part');
+            else console.log('Alexandre is no part');
+
+        
+    })
 })();

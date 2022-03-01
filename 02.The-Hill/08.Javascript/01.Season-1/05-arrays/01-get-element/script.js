@@ -17,6 +17,8 @@
         "cherry",
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+
+    btn.addEventListener('click', () => console.log(fruits[3]));
 
 })();
