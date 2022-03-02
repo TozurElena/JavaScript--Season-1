@@ -2,5 +2,13 @@
 
 
 (() => {
-    // your code here
+    let elena = {
+        lastname: 'Kozyreva',
+        firstname: 'Elena',
+        age: 46,
+        city: 'Gosselies',
+        country: 'Belgique',
+    };
+
+    document.getElementById('run').addEventListener('click', ()=> console.log(elena));
 })();

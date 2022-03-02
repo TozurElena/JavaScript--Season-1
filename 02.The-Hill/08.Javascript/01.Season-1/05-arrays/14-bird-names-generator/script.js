@@ -31,13 +31,26 @@
     ]);
 
     let btn = document.getElementById('run');
+
+    const getRandom = (arr) => {
+        return Math.floor(Math.random() * arr.length);
+    }
                     
     btn.addEventListener('click', () => {
+        let adjectivesArray = Array.from(adjectives);
+        let indexBirds = getRandom(birds);
+        let indexAdj = getRandom(adjectivesArray);
 
-        console.log(people.size);
-        if (people.has('Alexandre')) console.log('Alexandre is part');
-            else console.log('Alexandre is no part');
+        let nameBird = birds[indexBirds].name;
+        let nameAdjective = adjectivesArray[indexAdj];
+
+        if (birds[indexBirds].fem) nameAdjective += 'e';
+
+        document.getElementById('target').innerHTML = nameBird + ' ' + nameAdjective;
 
         
     })
+
+	
+
 })();
