@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+    let arr = (document.getElementsByClassName('target'));
+
+    for (i = 0; i < arr.length; i++) {
+        arr[i].innerHTML = 'owned';
+    }
+    
 
 })();

@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
+    let arr = (document.getElementsByClassName('material'));
+    let text = (arr[0].firstChild.nextSibling);
+    text.innerHTML = 'owned';
 
 })();

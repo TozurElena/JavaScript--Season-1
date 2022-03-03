@@ -3,6 +3,16 @@
 
 (() => {
 
-    // your code here
+    let passFirst = document.getElementById('pass-one');
+    let passSecond = document.getElementById('pass-two');
+    let input = document.querySelectorAll ('input');
+   
+    document.getElementById('run').addEventListener('click', () => {
+         if (passFirst.value !== passSecond.value) {
+            for(let elem of input) {
+                elem.classList.add("error");
+            }
+        }
+    })
 
 })();
