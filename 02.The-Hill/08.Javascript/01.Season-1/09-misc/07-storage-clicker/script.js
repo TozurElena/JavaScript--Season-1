@@ -3,6 +3,17 @@
 
 (() => {
 
-    // your code here
+    let text = document.getElementById('target').innerHTML;
+    let btn = document.getElementById('increment');
+    
 
+    btn.addEventListener('click', () => {
+        text++;
+        document.getElementById('target').innerHTML = text;
+        localStorage.setItem('counter', text);
+        
+    })
+    
+    document.getElementById('target').innerHTML = localStorage.getItem('counter');
+    
 })();
