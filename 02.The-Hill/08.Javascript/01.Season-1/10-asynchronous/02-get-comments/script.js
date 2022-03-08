@@ -2,5 +2,19 @@
 
 
 (() => {
-    // your code here
+    
+    document.getElementById('run').addEventListener('click', () => {
+		window.lib.getPosts((err, arr) => {
+			arr.forEach((el) => {
+                window.lib.getComments(el.id, (err, commentsArr) => {
+                    console.log(el.id);
+                    commentsArr.forEach((c) => {
+                        console.log(c.content);
+                    });
+                } );         
+				
+			});
+		});
+	});
+
 })();

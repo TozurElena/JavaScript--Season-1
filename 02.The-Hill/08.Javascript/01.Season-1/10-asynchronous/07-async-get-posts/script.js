@@ -2,5 +2,17 @@
 
 
 (() => {
-    // your code here
+    
+    document.getElementById('run').addEventListener('click', () => {
+		async function getPosts() {
+            let response = await window.lib.getPosts();
+            response.forEach((el) => {
+            console.log(el);
+            })
+         }
+         
+        getPosts();		
+	
+	});
+
 })();

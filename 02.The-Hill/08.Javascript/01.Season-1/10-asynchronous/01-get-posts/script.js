@@ -2,5 +2,16 @@
 
 
 (() => {
-    // your code here
+   
+
+	document.getElementById('run').addEventListener('click', () => {
+		window.lib.getPosts((err, arr) => {
+			arr.forEach((el) => {
+				console.log(el);
+			});
+		});
+	});
+
+
+
 })();

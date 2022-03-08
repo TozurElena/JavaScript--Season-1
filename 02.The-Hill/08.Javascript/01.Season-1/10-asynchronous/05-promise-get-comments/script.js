@@ -2,5 +2,21 @@
 
 
 (() => {
-    // your code here
+    
+    document.getElementById('run').addEventListener('click', () => {
+		window.lib.getPosts().then((promice) => {
+           
+            promice.forEach((el) => {
+                window.lib.getComments(el.id).then((promiceC) => {
+                   promiceC.forEach((e) => {
+                    // console.log(e);
+                    console.log(e.content);
+                   })
+                });
+            })  
+        });
+        		
+		
+	});
+
 })();

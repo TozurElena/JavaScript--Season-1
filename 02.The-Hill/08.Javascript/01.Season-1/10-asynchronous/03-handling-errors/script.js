@@ -2,5 +2,14 @@
 
 
 (() => {
-    // your code here
+    
+    document.getElementById('run').addEventListener('click', () => {
+		window.lib.getPersons((err,arrP) => {
+            if (err) return console.error(err);
+            arrP.forEach((el) => console.log(el));
+        })
+        		
+		
+	});
+
 })();
